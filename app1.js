@@ -39,8 +39,28 @@ document.write( ' '+ result +'<br>');
 /*
 ### Task-3
 Write a function called make_avg() which will take an array of integers and the size of that array and return the average of those values.
+ */
+function make_avg(marks){
+    total = 0;
+    for (const item of marks) {
+        total = item + total;
+    }
+    average = total / 3;
+    return average;
+}
+make_avg([23, 25, 24]);
+document.write(' <br> This is average ',average );
 
----
+let marks =[23, 25, 24];
+let marks_total = 0;
+for (const item of marks) {
+    marks_total = item + marks_total;
+}
+let gor = marks_total / marks.length;
+document.write( '<br> My Total Marks = ',gor);
+
+/**
+ * 
 
 ### Task-4  
 Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
