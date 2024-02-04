@@ -2,8 +2,19 @@
  Task-1  
 Take four parameters. Multiply the four numbers and then return the result 
 */
+function forMultiply( num1, num2 ){
+    multiply = num1 * num2 ;
+    return multiply;
+}
+let num1 = Number(prompt('Enter Your Number : '));
+let num2 = Number(prompt('Enter Your Number : '));
+forMultiply(num1, num2);
+document.write( `My given Number are `+ num1 + ', '+ num2 + '. and Their Multiply is = ' + multiply + '<br>');
 
-
+/** Multiplication table */
+for(let i = 0 ; i <= 10; i++){
+    document.write(num2 +'*'+ i + ' = '+ num2 * i + '<br>');
+}
 /*
 ### Task-2
 Take a number if the number is odd multiply it by 2 and return the result. If the number is even divide it by two and return the result.
