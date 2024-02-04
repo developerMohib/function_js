@@ -82,12 +82,21 @@ function count_zero(binary){
     return sum;
 }
 let zeroCount = count_zero('10101010101010');
-document.write('Total 0 in this string = ', zeroCount)
+document.write('<br> Total 0 in this string = ', zeroCount , '<br>')
 /*
-let manset = '1010101010'
-document.write('manset er length = ', manset.length)
 /**
 ### Task-5 
 Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return `Even`. If odd return `Odd`
 
  */
+
+function odd_even(myNumber){
+    if(myNumber % 2 === 0){
+        return 'Even';
+    }
+    else{
+        return 'Odd';
+    }
+} 
+let ckeckNumber = odd_even(232);
+document.write('Your given Number is : ', ckeckNumber);
