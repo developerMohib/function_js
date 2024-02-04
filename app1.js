@@ -57,7 +57,7 @@ for (const item of marks) {
     marks_total = item + marks_total;
 }
 let gor = marks_total / marks.length;
-document.write( '<br> My Total Marks = ',gor);
+document.write( '<br> My Total Marks = ',gor , "<br>");
 
 /**
  * 
@@ -65,8 +65,28 @@ document.write( '<br> My Total Marks = ',gor);
 ### Task-4  
 Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
 
----
-
+*/
+ 
+function count_zero(binary){
+    // document.write(binary , ' <br>'); 
+    zero_array = binary.split('');
+    document.write('length of array = ', zero_array.length , '<br>')
+    
+    let sum = 0;
+    for (let i=0; i < zero_array.length; i++) {
+        document.write(i, ' ');
+        if(zero_array[i] === '0'){
+            sum++;
+        }
+    }
+    return sum;
+}
+let zeroCount = count_zero('10101010101010');
+document.write('Total 0 in this string = ', zeroCount)
+/*
+let manset = '1010101010'
+document.write('manset er length = ', manset.length)
+/**
 ### Task-5 
 Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return `Even`. If odd return `Odd`
 
