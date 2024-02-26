@@ -14,9 +14,8 @@ document.write( `My given Number are `+ num1 + ', '+ num2 + '. and Their Multipl
 /** Multiplication table */
 
 for(let i = 0 ; i <= 10; i++){
-    document.write(num2 +'*'+ i + ' = '+ num2 * i + '<br>');
+    document.write(`${num2} * ${i} = ${num2 * i} <br>`);
 }
-
 /*
 Task-2
 Take a number if the number is odd multiply it by 2 and return the result. If the number is even divide it by two and return the result.
