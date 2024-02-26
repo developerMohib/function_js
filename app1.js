@@ -100,3 +100,16 @@ function odd_even(myNumber){
 } 
 let ckeckNumber = odd_even(232);
 document.write('Your given Number is : ', ckeckNumber);
+
+document.write('<br> <br> <hr> <h1> New Modiule of Function </h1> <hr> <br> <br>');
+
+// Default Function calling 
+
+function add(a, b=2){
+    return (a + b);
+}
+let myAddition = add(5, 9) ;
+document.write( 'adding parameter : ', myAddition, '<br> <br>' );
+
+myAddition = add(5) ;
+document.write( 'without adding parameter : ', myAddition, '<br> <br>' );
