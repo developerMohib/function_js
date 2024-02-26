@@ -113,3 +113,35 @@ document.write( 'adding parameter : ', myAddition, '<br> <br>' );
 
 myAddition = add(5) ;
 document.write( 'without adding parameter : ', myAddition, '<br> <br>' );
+
+
+// my practice 
+
+
+function calculator(a = 0 , b = 0, operationKoro){
+    if( operationKoro === 'additionKoro'){
+        let add = (a + b );
+        return add ;
+    }
+    else if( operationKoro === 'biyogKoro'){
+        if(a<b){
+            let biyog = (b - a );
+            return biyog;
+        }
+        else{
+            let biyog = (a - b );
+            return biyog;
+        }
+    }
+    else if( operationKoro === 'multiplyKoro'){
+        let add = (a * b );
+        return add ;
+    }
+    else{
+        document.write('break any where');
+    }
+}
+
+let adding = calculator(3, 4, 'biyogKoro');
+console.log(adding);
+document.write( 'addiiton : ', adding );
