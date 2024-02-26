@@ -126,7 +126,8 @@ function calculator(a = 0 , b = 0, operationKoro){
     else if( operationKoro === 'biyogKoro'){
         if(a<b){
             let biyog = (b - a );
-            return biyog;
+
+            return biyog , (`two number are ${a} and ${b} and bigNumber ${b}`);
         }
         else{
             let biyog = (a - b );
@@ -142,6 +143,15 @@ function calculator(a = 0 , b = 0, operationKoro){
     }
 }
 
-let adding = calculator(3, 4, 'biyogKoro');
+let adding = calculator(3, 4, 'additionKoro');
 console.log(adding);
-document.write( 'addiiton : ', adding );
+document.write( '<br> addiiton : ', adding , '<br>');
+
+
+adding = calculator(3, 4, 'biyogKoro');
+console.log(adding);
+document.write( '<br> BiyogKoro : ', adding , '<br>');
+
+adding = calculator(3, 4, 'multiplyKoro');
+console.log(adding);
+document.write( '<br> multiplyKoro : ', adding , '<br>');
