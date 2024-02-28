@@ -20,4 +20,11 @@ const student = {
     age: 22
 }
 // const age = myAge(student);
-console.log('My age : ', myAge(student));
+document.write('<br> My age : ', myAge(student));
+
+// Find the third Number from Array
+
+const findThird = (numbers) => numbers[2];
+const myArrayOfNumber = findThird([2,3,4,5,6,7]);
+
+document.write('<br> Find the third Number : ', myArrayOfNumber);
