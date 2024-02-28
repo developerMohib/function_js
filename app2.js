@@ -12,3 +12,12 @@ const difference = (x, y, z) => {
 const myDifferentFuntion = difference(2,3,4);
 console.log(myDifferentFuntion);
 document.write('<br> See the result : ', myDifferentFuntion);
+
+const myAge = (person) => person.age;
+const student = {
+    name: 'Mohib',
+    mobile: '01706439736',
+    age: 22
+}
+// const age = myAge(student);
+console.log('My age : ', myAge(student));
